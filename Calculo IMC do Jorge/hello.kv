@@ -1,0 +1,56 @@
+# -*- coding: utf-8 -*-
+
+# Importando o modulo para converter cor hex em RGBA.
+#:import cor kivy.utils.get_color_from_hex
+<Imc>:
+    BoxLayout:
+        orientation: "vertical"
+        padding: 5
+        spacing: 5
+        Label:
+            markup: True
+            text:'[size=40px][color=#293945][b] Calcula IMC[/size][/color][/b]'
+            background_color: cor('#293945')
+
+        Image:
+            source: 'img.png'
+            size_hint: 1, 6
+        Label:
+            markup: True
+            text:'[size=20px][color=#293945][b]Digite seu peso[/size][/color][/b]'
+            background_color: cor('#293945')
+        TextInput:
+            id: peso
+        Label:
+            id: al
+            markup: True
+            text:'[size=20px][color=#293945][b]Digite sua altura[/size][/color][/b]'
+            background_color: cor('#293945')
+        TextInput:
+            id:altura
+
+        Button:
+            text: 'Calcular'
+            #size_hint: .2, .1
+
+            # Removendo o imagem padrão do botão
+            background_normal: ''
+
+            # Aplicando uma nova cor ao botão.
+            background_color: cor('#293945')
+            on_press: root.Cal()
+        Button:
+            text: 'Limpar'
+            #size_hint: .2, .1
+
+            # Removendo o imagem padrão do botão
+            background_normal: ''
+
+            # Aplicando uma nova cor ao botão.
+            background_color: cor('#293945')
+            on_press: root.limp()
+        Label:
+            id: resultado
+            markup: True
+            text:'[size=40px][color=#293945][b]Resultado[/size][/color][/b]'
+            background_color: cor('#293945')

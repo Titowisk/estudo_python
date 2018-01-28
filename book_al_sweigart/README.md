@@ -1,0 +1,1 @@
+Exercícios do livro: Automatize Tarefas Maçantes com Python - Al Sweigart

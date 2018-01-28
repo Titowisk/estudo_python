@@ -1,0 +1,1 @@
+Alguns Exercícios do CodeFights que fiz ou precisei analisar melhor.

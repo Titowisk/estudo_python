@@ -1,0 +1,1 @@
+Alguns Exercícios do HackerRank que fiz ou precisei analisar melhor.

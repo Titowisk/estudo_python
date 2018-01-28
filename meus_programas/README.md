@@ -1,0 +1,1 @@
+Esta pasta contém experimentos, pequenos testes, e outras coisas que fiz com python.

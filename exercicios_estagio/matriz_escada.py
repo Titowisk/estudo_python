@@ -15,6 +15,11 @@
 matriz = [[1, 0, 2],
           [0, 0, 0],
           [0, -1, 2]]
+matriz = [  
+    [0,0,0],
+    [0,1,0],
+    [0,0,0],
+    ]
 
 linha = len(matriz)
 coluna = len(matriz[0])
@@ -25,7 +30,7 @@ for i in range(linha):
     # verifica linhas nulas
     lista_nula = [0] * coluna
     if matriz[i] == lista_nula:
-        if i < linha-1: 
+        if i < linha-1: # se i não for a ultima linha
             if matriz[i+1] == lista_nula:
                 continue
         else:
